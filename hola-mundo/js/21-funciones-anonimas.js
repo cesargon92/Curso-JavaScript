@@ -10,12 +10,9 @@ function sumame(numero1, numero2, sumaYmuestra, sumaPorDos){
     return sumar;
 }
 
-sumame(5, 7, function(dato){
+sumame(5, 7, function(dato){ // función de callback
     console.log("La suma es: " + dato);
 },
-function(dato){
+dato => { // lo mismo que una función de callback
     console.log("La suma por dos es: " + (dato*2));
 });
-/*var pelicula = function(nombre){
-    return "La Película es: " + nombre;
-}*/
